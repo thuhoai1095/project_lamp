@@ -13,9 +13,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/listall', "PostController@listAllPosts")->name("post.list");
 
-Route::get('/welcome', function () {
-     return "<h1>Chào mừng các bạn đến với giờ DP hôm nay:D</h1>";
+Route::group(['prefix'=>'user'],function (){
+    //user/personal/sua
+    Route::group(['prefix'=>'personal'],function () {
+        Route::get('sua','PersonalController@getSua');
+        Route::get('them','PersonalController@getThem');
+    });
+    //user/post/them
+    Route::group(['prefix'=>'post'],function () {
+        Route::get('danhsach','PostController@getDanhSach');
+        Route::get('sua','PostController@getSua');
+        Route::get('them','PostController@getThem');
+    });
 });
-
-Route::get('/product', 'ProductController@danhsach');
