@@ -15,7 +15,7 @@ class PostController extends Controller
     }
 
     public  function  getDanhSach(){
-        return view('user.post.danhsach');
+        return view('qluser.post.danhsach');
     }
 
     public  function  getSua(){

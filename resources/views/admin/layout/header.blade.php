@@ -26,7 +26,7 @@
                 <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                 </li>
             </ul>
-            <!-- /.dropdown-user -->
+            <!-- /.dropdown-qluser -->
         </li>
         <!-- /.dropdown -->
     </ul>
@@ -50,13 +50,13 @@
                     <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Category<span class="fa arrow"></span></a>
+                    <a href="admin/theloai/danhsach"><i class="fa fa-bar-chart-o fa-fw"></i> Category<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="#">List Category</a>
+                            <a href="admin/theloai/danhsach">List Category</a>
                         </li>
                         <li>
-                            <a href="#">Add Category</a>
+                            <a href="admin/theloai/them">Add Category</a>
                         </li>
                     </ul>
                     <!-- /.nav-second-level -->
